@@ -21,7 +21,7 @@ app.get('/', (req: Request, res: Response): void => {
     res.send("API Working correctly");
 });
 app.get('/health', (req: Request, res: Response): void =>{
-    res.send(200).json({message: "Healthy"});
+    res.status(200).json({message: "Healthy"});
 })
 
 app.listen(port, () => {
