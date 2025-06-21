@@ -20,6 +20,9 @@ app.get('/:path', getLink);
 app.get('/', (req: Request, res: Response): void => {
     res.send("API Working correctly");
 });
+app.get('/health', (req: Request, res: Response): void =>{
+    res.send(200).json({message: "Healthy"});
+})
 
 app.listen(port, () => {
     console.log("Server Running on port:", port);
