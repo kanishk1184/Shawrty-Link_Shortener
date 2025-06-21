@@ -27,7 +27,7 @@ function App() {
     // Check if it is a url
     if (isValidUrl()){
       try{
-        const res = await fetch('https://shawrty-hgdz.onrender.com/create', {
+        const res = await fetch('https://s-2rl8.onrender.com/create', {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
